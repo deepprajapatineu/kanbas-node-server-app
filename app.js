@@ -6,7 +6,8 @@ import "dotenv/config"
 import Hello from "./hello.js"
 import Lab5 from "./lab5.js"
 import CourseRoutes from "./courses/routes.js";
-import ModuleRoutes from "./modules/routes.js"
+import ModuleRoutes from "./modules/routes.js";
+import AssignmentRoutes from "./assignments/routes.js";
 
 const app = express()
 
@@ -17,6 +18,7 @@ const PORT = 4000
 
 CourseRoutes(app);
 ModuleRoutes(app);
+AssignmentRoutes(app);
 Hello(app)
 Lab5(app)
 
